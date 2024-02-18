@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Serving fonts</title>
+    <style>
+        
+        @font-face {
+            font-family: 'Halimun-W7jn';
+            src: url('https://shobhithhomeworks.z5.web.core.windows.net/itc505/homework/3/Halimun-W7jn.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Halimun-W7jn', cursive;
+            background-color: rgb(67, 192, 186);
+            background-image: url('1.png');
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #333; 
+            border-radius: 10px; 
+            background-color: #fff; 
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+        h2 {
+            color: blue;
+        }
+
+        h1, h2, h3, h4, h5, h6 {;
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        ul {
+            list-style-type:'*';
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .important-note {
+            color: red;
+            font-weight: bold;
+        }
+
+        .additional-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CLIENT BROWSER</h1>
+        <h2>Lab 3: Custom Font Delivery to a Client's Browser</h2>
+        <p >When the client's browser seeks a font from your server, the procedure encompasses configurations on the server side and implementations on the client side. Here's a comprehensive step-by-step manual:</p>
+        <ol>
+            <li><strong>Select a Font:</strong> Choose the particular font you intend to provide to the client.</li>
+            <li><strong>Get the font files:</strong>
+                <ul>
+                    <li>For web-safe fonts, no extra files are necessary since they come preinstalled on the majority of devices.</li>
+                    <li>If opting for custom fonts, acquire the font files (e.g., .woff, .woff2, .ttf) and make necessary preparations for hosting them on your server.</li>
+                </ul>
+            </li>
+            <li><strong>Serve Font Files:</strong>
+                <ul>
+                    <li>Place the font files into a directory on your web server, ensuring their accessibility through a URL (for example, http://<your domain>/itc505/lab-3/index.html).</li>
+                </ul>
+            </li>
+            <li><strong>Declare the font-face in CSS:</strong>
+                <ul>
+                    <li>In your CSS, define a @font-face rule specifying font-family, source URLs, and font format.</li>
+                </ul>
+            </li>
+            <li><strong>Apply the Font:</strong>
+                <ul>
+                    <li>Once you've established the @font-face, employ the custom font either selectively for specific elements or universally using CSS selectors such as font-family.</li>                
+                </ul>
+            </li>
+        </ol>
+        <div class="additional-info">
+            <p class="important-note">Important Note:</p>
+            <p>
+                It's crucial to consider licensing agreements and copyright permissions when using custom fonts,
+                ensuring compliance with legal requirements for font distribution and usage.
+            </p>
+
+            <p class="important-note">Additional Tips:</p>
+            <ul>
+                <li>
+                    <strong>Optimize Font Files:</strong> Compress and optimize font files for faster loading times,
+                    especially if you have multiple fonts or variations.
+                </li>
+                <li>
+                    <strong>Use Font Subsetting:</strong> When possible, utilize font subsetting to include only the
+                    characters needed, reducing file size.
+                </li>
+            </ul>
+        </div>
+        <p>By adhering to these steps, you guarantee the provision of a designated font when sought by the client's browser.</p>
+        <p><strong>Source of the Font:</strong> Halimun by Creatype Studio, available on <a href="https://www.fontspace.com">fontspace.com</a></p>
+        <footer>
+            <p>Last updated: 
+                <span id="lastModified"></span>
+            </p>
+        </footer>
+        <script type="text/javascript">
+             var x = document.lastModified;
+             document.getElementById('lastModified').textContent = x;
+        </script>
+    </div>
+</body>
+
+</html>
