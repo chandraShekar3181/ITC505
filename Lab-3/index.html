@@ -35,6 +35,7 @@
             color: red;
         }
         h2 {
+            font-family: sans-serif;
             color: blue;
         }
 
@@ -82,19 +83,19 @@
 
 <body>
     <div class="container">
-        <h1>CLIENT BROWSER</h1>
-        <h2>Lab 3: Custom Font Delivery to a Client's Browser</h2>
-        <p >When the client's browser seeks a font from your server, the procedure encompasses configurations on the server side and implementations on the client side. Here's a comprehensive step-by-step manual:</p>
+        <h1><u>CLIENT BROWSER</u></h1>
+        <h2><i>Lab 3: Custom Font Delivery to a Client's Browser</i></h2>
+        <p style="font-family: fantasy;">When the client's browser seeks a font from your server, the procedure encompasses configurations on the server side and implementations on the client side. Here's a comprehensive step-by-step manual:</p>
         <ol>
             <li><strong>Select a Font:</strong><p style="font-family: 'Courier New', Courier, monospace;"> Choose the particular font you intend to provide to the client.</p></li>
             <li><strong>Get the font files:</strong>
-                <ul style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <ul style="font-family: Franklin Gothic Medium;">
                     <li>For web-safe fonts, no extra files are necessary since they come preinstalled on the majority of devices.</li>
                     <li>If opting for custom fonts, acquire the font files (e.g., .woff, .woff2, .ttf) and make necessary preparations for hosting them on your server.</li>
                 </ul>
             </li>
             <li><strong>Serve Font Files:</strong>
-                <ul style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <ul style="font-family: Gill Sans;">
                     <li>Place the font files into a directory on your web server, ensuring their accessibility through a URL (for example, http://<your domain>/itc505/lab-3/index.html).</li>
                 </ul>
             </li>
@@ -104,7 +105,7 @@
                 </ul>
             </li>
             <li><strong>Apply the Font:</strong>
-                <ul style="font-family: 'Times New Roman', Times, serif;">
+                <ul style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                     <li>Once you've established the @font-face, employ the custom font either selectively for specific elements or universally using CSS selectors such as font-family.</li>                
                 </ul>
             </li>
@@ -112,17 +113,17 @@
         <div class="additional-info">
             <p class="important-note">Important Note:</p>
             <p style="font-family: Georgia, 'Times New Roman', Times, serif;">
-                It's crucial to consider licensing agreements and copyright permissions when using custom fonts,
-                ensuring compliance with legal requirements for font distribution and usage.
+                <i>It's crucial to consider licensing agreements and copyright permissions when using custom fonts,
+                ensuring compliance with legal requirements for font distribution and usage.</i>
             </p>
 
             <p class="important-note">Additional Tips:</p>
             <ul style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-                <li>
+                <li style="font-family: serif;">
                     <strong>Optimize Font Files:</strong> Compress and optimize font files for faster loading times,
                     especially if you have multiple fonts or variations.
                 </li>
-                <li>
+                <li style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
                     <strong>Use Font Subsetting:</strong> When possible, utilize font subsetting to include only the
                     characters needed, reducing file size.
                 </li>
