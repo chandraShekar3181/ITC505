@@ -1,0 +1,129 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  grid-column: 1 / span 3;
+}
+
+nav {
+  background-color: #f34a4e;
+  color: #fff;
+  padding: 20px;
+  grid-column: 1;
+  grid-row: 2 / span 2; /* Adjusted to span 2 rows */
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px; /* Increase font size for sidebar links */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li a::before {
+  content: "\25B6"; /* Unicode for right-pointing triangle */
+  position: absolute;
+  left: 0;
+}
+main {
+  background-color: #fff;
+  padding: 20px;
+  grid-column: 2;
+  grid-row: 2; /* Adjusted to start from the second row */
+}
+
+.quote-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.author {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.sidebar {
+  background-color: #f34a4e; /* Red color for sidebar */
+  color: #fff;
+  padding: 20px;
+  grid-column: 3; /* Placing sidebar in the third column */
+  grid-row: 1 / span 3; /* Adjusted to span 3 rows */
+}
+
+footer {
+  position:sticky; /* Set footer to fixed position */
+  bottom: 0; /* Align footer to bottom of viewport */
+  left: 0; /* Align footer to left side */
+  width: 100%; /* Set footer width to 100% of viewport */
+  background-color: #41e917;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+/* Addendum Section Styles */
+#addendum {
+  margin-top: 40px; /* Adjust spacing from previous content */
+}
+
+#addendum h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#addendum ul {
+  list-style: none;
+}
+
+#addendum ul li {
+  margin-bottom: 10px;
+}
+
+#addendum ul li strong {
+  font-weight: bold;
+}
