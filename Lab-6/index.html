@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Quote Generator</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h3 style="text-align: center;">CLICK NEW QUOTE TO GENERATE NEW QUOTE</h3>
+
+      <div class="quote-box" id="quote-box">
+        <p class="quote-text" id="quote-text">"This is a random quote."</p>
+        <p class="author" id="author">- Unknown</p>
+      </div>
+      <button class="button" id="new-quote">New Quote</button>
+      <br>
+    </main>
+
+    <aside class="sidebar">
+      <h3>ADVERTISEMENTS</h3>
+      <nav>
+        <a href="https://www.amazon.com/" target="_blank">
+          <img src="1.jpeg" alt="Amazon" width="150px" height="150px">Buy at amazon season sale
+        </a>
+        <br>
+        <br>
+        <a href="https://www.flipkart.com/" target="_blank">
+          <img src="2.jpeg" alt="Flipkart" width="150px" height="150px"> Filpkart Season Sale is Live Now
+        </a>
+      </nav>
+    </aside>
+  </div>
+
+
+  <footer>
+    <section id="addendum">
+      <h2>Addendum</h2>
+      <ul>
+        <li><strong>Problem Statement:</strong> The project aimed to create a Random Quote Generator webpage.</li>
+        <li><strong>Solution Overview:</strong> HTML, CSS, and JavaScript were utilized to design and implement the functionality of the Random Quote Generator.</li>
+        <li><strong>Implementation Details:</strong> The HTML structure was set up to organize the header, navigation, main content area for quotes, sidebar for external links, and footer. CSS was employed to style the layout and elements, ensuring visual coherence and responsiveness. JavaScript was used to fetch and display random quotes, update the last modified date in the footer, and handle user interactions such as clicking the "New Quote" button.</li>
+        <li><strong>Challenges Encountered:</strong> Challenges included ensuring cross-browser compatibility and responsiveness across various devices and screen sizes. Additionally, retrieving and displaying quotes dynamically required integration with an external API or the creation of a database.</li>
+        <li><strong>Resolution Strategy:</strong> By leveraging modern web development techniques and frameworks, we tackled challenges systematically. HTML, CSS, and JavaScript were utilized effectively to create an engaging and functional Random Quote Generator that meets user expectations.</li>
+      </ul>
+    </section>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+</html>
