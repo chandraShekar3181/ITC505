@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Libs Game</title>
+  <link rel="stylesheet" href="styles11.css">
+</head>
+<body>
+  <h1 class="main-title">Let's Get Creative with Mad Libs!</h1>
+  <main>
+    <div class="inputs-container">
+      <label class="input-label" for="name-dropdown">Choose a name:</label>
+      <select class="input-dropdown" name="name" id="name-dropdown">
+        <option value="">--Select a name--</option>
+        <option value="Sarah">Sarah</option>
+        <option value="John">John</option>
+        <option value="Emily">Emily</option>
+        <option value="Michael">Michael</option>
+      </select>
+      <label class="input-label" for="verb-dropdown">Choose a verb:</label>
+      <select class="input-dropdown" name="verb" id="verb-dropdown">
+        <option value="">--Select a verb--</option>
+        <option value="playing">playing</option>
+        <option value="singing">singing</option>
+        <option value="dancing">dancing</option>
+        <option value="cooking">cooking</option>
+      </select>
+      <label class="input-label" for="place-dropdown">Choose a place:</label>
+      <select class="input-dropdown" name="place" id="place-dropdown">
+        <option value="">--Select a place--</option>
+        <option value="the park">the park</option>
+        <option value="the beach">the beach</option>
+        <option value="the mountains">the mountains</option>
+        <option value="the city">the city</option>
+      </select>
+      <label class="input-label" for="food-dropdown">Choose a food:</label>
+      <select class="input-dropdown" name="food" id="food-dropdown">
+        <option value="">--Select a food--</option>
+        <option value="pizza">pizza</option>
+        <option value="sushi">sushi</option>
+        <option value="tacos">tacos</option>
+        <option value="pasta">pasta</option>
+      </select>
+    </div>
+    <div class="buttons-container">
+      <button class="action-btn" id="generate-btn">Generate</button>
+      <button class="action-btn" id="clear-btn">Clear</button>
+      <button class="action-btn" id="previous-btn">Previous</button>
+      <button class="action-btn" id="exit-btn">Exit</button>
+    </div>
+    <p id="story-result"></p>
+  </main>
+  <section id="addendum">
+    <h2>Addendum</h2>
+    <ol>
+      <li><strong>Accessibility Considerations:</strong> Ensure all interactive elements are accessible...</li>
+      <li><strong>Error Handling:</strong> Implement error handling for unexpected scenarios...</li>
+      <li><strong>Localization and Internationalization:</strong> Consider internationalization by allowing...</li>
+      <li><strong>Browser Compatibility:</strong> Test the application across different browsers...</li>
+      <li><strong>Security Measures:</strong> Sanitize user inputs to prevent injection attacks...</li>
+      <li><strong>Performance Optimization:</strong> Optimize code and assets to reduce load times...</li>
+      <li><strong>User Experience Enhancements:</strong> Continuously gather user feedback to identify...</li>
+      <li><strong>Documentation and Maintenance:</strong> Document the codebase, including setup...</li>
+      <li><strong>Testing and Quality Assurance:</strong> Conduct thorough testing, including unit tests...</li>
+      <li><strong>Scalability and Flexibility:</strong> Design the application with scalability in mind...</li>
+      <li><strong>Legal and Compliance Requirements:</strong> Ensure compliance with relevant laws...</li>
+      <li><strong>Feedback Mechanisms:</strong> Implement mechanisms for users to provide feedback...</li>
+    </ol>
+  </section>
+
+  <script src="script11.js"></script>
+  <footer>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+</footer>
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
+</body>
+</html>
